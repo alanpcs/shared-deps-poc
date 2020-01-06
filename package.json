@@ -1,6 +1,6 @@
 {
   "name": "shared-deps-poc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Commonly used deps amongst projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,11 +28,15 @@
     "@types/node": "^12.7.5",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "tslint": "^5.20.0",
     "ts-node": "^8.3.0",
+    "tslint": "^5.20.0",
     "typescript": "~3.6.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/traverse": "^0.6.32",
+    "traverse": "^0.6.6",
+    "winston": "^3.2.1"
+  },
   "engines": {
     "node": ">=8"
   },

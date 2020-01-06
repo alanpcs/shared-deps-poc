@@ -8,7 +8,16 @@
     "sourceMap": true,
     "target": "es5",
     "declaration": true,
-    "types": ["mocha", "node", "chai"]
+    "types": ["mocha", "node", "chai"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true
   },
   "compileOnSave": true,
   "include": ["src"]
