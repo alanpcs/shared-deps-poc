@@ -1,6 +1,6 @@
 {
   "name": "shared-deps-poc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Commonly used deps amongst projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

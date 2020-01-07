@@ -1,3 +1,4 @@
 import { WinstonLogger } from "./logger/winston-logger";
-export declare const Logger: typeof WinstonLogger;
+import { Logger } from "./logger/logger";
+export { WinstonLogger, Logger };
 export declare const hello: () => string;
