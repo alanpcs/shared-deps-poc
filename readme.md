@@ -16,11 +16,7 @@ _authToken=${NPM_TOKEN_GITHUB}
 
 ### Adding the dependency 
 
-#### using the yarn cli:
-`yarn add @demonkart/shared-deps-poc --update-checksums`
-
-
-#### or directly in the `package.json` file:
+Directly in the `package.json` file:
 ```
  "dependencies": {
     "@demonkart/shared-deps-poc": "^1.0.2",
