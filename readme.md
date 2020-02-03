@@ -8,9 +8,15 @@ I suggest following the steps from 1 to 6 of this article: https://dev.to/daleng
 
 The installation of the package using yarn needs to be as following.
 
+## Using yarn to version the package
+
+`yarn version` can be used when deploying a new version during the pipeline process. Some use arguments are `--major`, `--minor` and `--patch` to update the respectively numbers automatically.
+
 ## Installing using yarn
 
-`yarn` is not yet fully [supported by github packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats). In order to use it with `yarn`, do the following:
+`yarn` is not yet fully [supported by github packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats). 
+
+In order to use it with `yarn`, do the following:
 
 ### Authentication for this scoped repo 
 
