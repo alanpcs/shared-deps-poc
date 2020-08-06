@@ -1,46 +1,46 @@
 {
-  "name": "shared-deps-poc",
-  "version": "1.0.2",
-  "description": "Commonly used deps amongst projects",
+  "name": "@demonkart/shared-deps-poc",
+  "version": "1.0.3",
+  "description": "Template to create a package to be shared",
+  "author": "AlanPCS",
+  "license": "MIT",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "typings": "dist/typings/index.d.ts",
+  "files": [
+    "dist",
+    "dist/typings"
+  ],
   "scripts": {
-    "test": "mocha --timeout 60000 --exit -r ts-node/register test/**/*.spec.ts",
-    "build": "tsc",
-    "deploy": "npm publish"
+    "test": "mocha --timeout 60000 --exit -r ts-node/register test/**/**/*.test.ts",
+    "lint": "eslint 'src/**/*.ts'",
+    "lint:fix": "eslint 'src/**/*.ts' --fix",
+    "build": "rm -rf dist && tsc",
+    "deploy": "yarn build && npm publish"
   },
   "keywords": [
     "typescript",
     "github packages",
-    "npm packages",
-    "boilerplate",
-    "poc"
+    "packages",
+    "boilerplate"
   ],
-  "author": "AlanPCS",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+git@github.com:DemonKart/shared-deps-poc.git"
-  },
   "devDependencies": {
     "@types/chai": "^4.2.2",
-    "@types/mocha": "^5.2.7",
+    "@types/mocha": "^7.0.2",
     "@types/node": "^12.7.5",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
     "chai": "^4.2.0",
-    "mocha": "^5.2.0",
+    "eslint": "7.6.0",
+    "mocha": "^7.1.0",
     "ts-node": "^8.3.0",
     "tslint": "^5.20.0",
     "typescript": "~3.6.3"
   },
-  "dependencies": {
-    "@types/traverse": "^0.6.32",
-    "traverse": "^0.6.6",
-    "winston": "^3.2.1"
-  },
-  "engines": {
-    "node": ">=8"
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/DemonKart/shared-deps-poc.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@DemonKart"
+    "registry": "https://npm.pkg.github.com/DemonKart"
   }
 }

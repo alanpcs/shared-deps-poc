@@ -1,6 +1,7 @@
-import { Logger } from "./logger/logger";
-export { Logger };
+import { fibonacci } from "./my-custom-module/fibonacci";
 
-export const hello = () => {
+const hello = (): string => {
   return "world!";
 };
+
+export { fibonacci, hello };
