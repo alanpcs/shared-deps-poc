@@ -1,6 +1,6 @@
 {
   "name": "@demonkart/shared-deps-poc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Template to create a package to be shared",
   "author": "AlanPCS",
   "license": "MIT",
