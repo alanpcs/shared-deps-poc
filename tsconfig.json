@@ -20,5 +20,5 @@
     "alwaysStrict": true
   },
   "compileOnSave": true,
-  "include": ["src"]
+  "include": ["src", "typings"]
 }
