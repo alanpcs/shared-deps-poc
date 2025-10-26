@@ -14,7 +14,7 @@ https://dev.to/dalenguyen/create-your-first-github-package-564f
 
 ## Installing using yarn
 
-`yarn` is not yet fully [supported by github packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats). 
+`yarn` is not yet fully [supported by github packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats).
 
 In order to use it with `yarn`, do the following:
 
@@ -24,7 +24,7 @@ In the same folder of package.json, you must have a `.npmrc` file with the
 following:
 
 ```
-@demonkart:registry=https://npm.pkg.github.com/
+@alanpcs:registry=https://npm.pkg.github.com/
 ```
 
 ### Private repos
@@ -36,28 +36,28 @@ that uses the private package, the `.npmrc` should have the additional line belo
 
 ```
 //npm.pkg.github.com/:_authToken=${MY_GITHUB_TOKEN}
-@demonkart:registry=https://npm.pkg.github.com/
+@alanpcs:registry=https://npm.pkg.github.com/
 ```
 
 This extra line contains the `_authToken` environment variable
 (`MY_GITHUB_TOKEN` in this example) which should have the PAT created above as
 the value.
 
-> Note: The CI pipeline must have an env var with the same name and its value 
+> Note: The CI pipeline must have an env var with the same name and its value
 > (the PAT) should come from a secret for security reasons.
 
-### Adding the dependency 
+### Adding the dependency
 
 To add it via yarn:
 
 ```sh
-yarn add @demonkart/shared-deps-poc
+yarn add @alanpcs/shared-deps-poc
 ```
 
 If you prefer to edit `package.json` directly:
 ```
  "dependencies": {
-    "@demonkart/shared-deps-poc": "^1.0.4",
+    "@alanpcs/shared-deps-poc": "^1.0.4",
   }
 ```
 and then running `yarn --update-checksums`

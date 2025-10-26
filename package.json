@@ -1,5 +1,5 @@
 {
-  "name": "@demonkart/shared-deps-poc",
+  "name": "@alanpcs/shared-deps-poc",
   "version": "1.0.4",
   "description": "Template to create a package to be shared",
   "author": "AlanPCS",
@@ -11,7 +11,7 @@
     "dist/typings"
   ],
   "scripts": {
-    "test": "mocha --timeout 60000 --exit -r ts-node/register test/**/**/*.test.ts",
+    "test": "mocha --timeout 60000 --exit -r ts-node/register src/**/*.test.ts",
     "lint": "eslint 'src/**/*.ts'",
     "lint:fix": "eslint 'src/**/*.ts' --fix",
     "build": "rm -rf dist && tsc",
@@ -38,9 +38,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/DemonKart/shared-deps-poc.git"
+    "url": "ssh://git@github.com/alanpcs/shared-deps-poc.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/DemonKart"
+    "registry": "https://npm.pkg.github.com/alanpcs"
   }
 }
