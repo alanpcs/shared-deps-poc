@@ -1,1 +1,2 @@
-export type MathFunction = (n: number) => number;
+// eslint-disable-next-line no-unused-vars
+export type MathFunction = (_n: number) => number;
