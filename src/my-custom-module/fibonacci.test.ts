@@ -1,4 +1,4 @@
-import { fibonacci } from "../../src/my-custom-module/fibonacci";
+import { fibonacci } from "./fibonacci";
 import { expect } from "chai";
 
 describe("fibonacci", () => {
