@@ -8,7 +8,7 @@
     "sourceMap": true,
     "target": "es5",
     "declaration": true,
-    "types": ["mocha", "node", "chai"],
+    "types": ["jest", "node"],
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
@@ -20,5 +20,6 @@
     "alwaysStrict": true
   },
   "compileOnSave": true,
-  "include": ["src", "typings"]
+  "include": ["src/**/*.ts", "typings"],
+  "exclude": ["node_modules", "src/**/*.test.ts"]
 }
