@@ -45,6 +45,9 @@
     "type": "git",
     "url": "ssh://git@github.com/alanpcs/shared-deps-poc.git"
   },
+  "engines": {
+    "node": ">=24"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/alanpcs"
   }
